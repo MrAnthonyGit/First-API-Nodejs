@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About page</title>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <%- include('partials/navigation') %>
+    <main
+      class="vh-100 container pt-2 text-center d-flex justify-content-center align-items-center"
+    >
+      <section class="despaly-1">
+        <div class="container">
+          <h1 class="display-1 my-5 text-uppercase fw-bold">About</h1>
+          <p>
+            This is a simple project to learn how to use Node.js, Express, and
+            EJS to create a web application.
+          </p>
+          <p>
+            This project includes a home page, an about page, a contact page,
+            and an info page.
+          </p>
+          <p>
+            The project also includes a 404 page to handle errors when a page is
+            not found.
+          </p>
+        </div>
+      </section>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
