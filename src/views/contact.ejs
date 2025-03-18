@@ -11,27 +11,28 @@
     <div
       class="container vh-100 d-flex justify-content-center align-items-center"
     >
-      <div class="card animated fadeInUp bg-dark p-3 border-secondary">
+      <div class="card animated fadeInUp bg-dark p-3 border-secondary w-100" style="max-width: 500px;">
         <div class="card-header bg-dark text-white text-center">
-          <h3>Contact Me</h3>
+          <h3 class="mb-2">Contact Me</h3>
+          <span class="text-warning d-block small">This option is temporarily disabled, sorry</span>
         </div>
         <div class="card-body">
           <form action="">
             <div class="mb-3">
-              <label for="email">Email:</label>
-              <input class="form-control" type="text" placeholder="Email" />
+              <label for="email" class="form-label text-light">Email:</label>
+              <input class="form-control bg-dark text-light" type="email" id="email" placeholder="Email" />
             </div>
             <div class="mb-3">
-              <label for="email">Message:</label>
+              <label for="message" class="form-label text-light">Message:</label>
               <textarea
-                class="form-control"
-                name=""
-                cols="30"
-                rows="10"
+                class="form-control bg-dark text-light"
+                id="message"
+                name="message"
+                rows="6"
                 placeholder="Message"
               ></textarea>
             </div>
-            <button class="btn btn-primary btn-block">Save</button>
+            <button class="btn btn-primary w-100">Save</button>
           </form>
         </div>
       </div>

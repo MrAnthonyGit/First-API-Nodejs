@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3" data-bs-theme="dark">
   <div class="container">
-    <a class="navbar-brand" href="/">Node API project</a>
+    <a class="navbar-brand fw-bold" href="/">Node API project</a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler border-0"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
@@ -13,15 +13,15 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto text-center">
         <li class="nav-item">
-          <a class="nav-link <%= typeof path !== 'undefined' && path === '/' ? 'active' : '' %>" href="/">Home</a>
+          <a class="nav-link px-3 <%= typeof path !== 'undefined' && path === '/' ? 'active' : '' %>" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <%= typeof path !== 'undefined' && path === '/about' ? 'active' : '' %>" href="/about">About</a>
+          <a class="nav-link px-3 <%= typeof path !== 'undefined' && path === '/about' ? 'active' : '' %>" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <%= typeof path !== 'undefined' && path === '/contact' ? 'active' : '' %>" href="/contact">Contact</a>
+          <a class="nav-link px-3 <%= typeof path !== 'undefined' && path === '/contact' ? 'active' : '' %>" href="/contact">Contact</a>
         </li>
       </ul>
     </div>
