@@ -1,27 +1,14 @@
 First API project with NodeJs and Express.
+# How to run
 
-<!-- BOOTSTRAP 5 CDN -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-/>
+1. Clone the repository
+2. Run `npm install express morgan`
+3. Run `npm install nodemon -D`
+4. Run `npm run dev`
 
-<!-- FONT AWESOME -->
-<link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
+Description:
+This is a simple project to learn how to use Node.js, Express, and EJS to create a web application.
 
-<!-- GOOGLE FONTS -->
-<link
-  href="https://fonts.googleapis.com/css?family=Spicy+Rice"
-  rel="stylesheet"
-/>
-<!-- ANIMATE.CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-/>
+This project includes a home page, an about page, a contact page.
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/css/main.css" />
+The project also includes a 404 page to handle errors when a page is not found.
