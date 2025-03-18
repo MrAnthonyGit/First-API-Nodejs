@@ -15,7 +15,10 @@ router.get('/contact', (req, res) => {
 })
 
 router.use((req, res) => {
-  res.status(404).render('404-page', { title: '404 Not Found' });
+  res.status(404).render('404-page', { 
+    title: '404 Not Found',
+    path: req.path 
+  });
 });
 
 export default router
