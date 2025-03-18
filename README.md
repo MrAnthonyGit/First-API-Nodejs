@@ -11,4 +11,4 @@ This is a simple project to learn how to use Node.js, Express, and EJS to create
 
 This project includes a home page, an about page, a contact page.
 
-The project also includes a 404 page to handle errors when a page is not found.
+The project also includes a 404 page to handle errors when a page is not found. This page is displayed when a user tries to access a page that does not exist like "https://first-api-nodejs.vercel.app/ANYTHING".
