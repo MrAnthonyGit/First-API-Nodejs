@@ -3,51 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Not found</title>
-    <%- include('partials/head') %> <%- include('partials/navigation') %>
-    <!-- <style class="">
-      body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      }
-      .container {
-      text-align: center;
-      }
-      h1 {
-      font-size: 3em;
-      color: #333;
-      }
-      p {
-      font-size: 1.2em;
-      color: #666;
-      }
-      .home-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1em;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      }
-      .home-button:hover {
-      background-color: #0056b3;
-      }
-    </style> -->
+    <title><%= title %></title>
+    <%- include('partials/head') %>
   </head>
-  <body>
-    <div class="container d-flex vh-100 flex-column justify-content-center align-items-center">
-      <h1>404</h1>
-      <p>Page Not Found</p>
-      <a href="/" class="home-button">Go Home</a>
-    </div>
+  <body class="bg-dark text-white">
+    <%- include('partials/navigation') %>
+    
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-1 my-3 text-uppercase fw-bold animated fadeIn">404</h1>
+        <h2 class="display-6 mb-4 text-secondary animated fadeIn">Oops! Page Not Found</h2>
+        <p class="lead mb-5 animated fadeIn">The page you're looking for might have been removed.</p>
+        <div class="animated bounceIn">
+          <a href="/" class="btn btn-primary btn-lg px-5 me-3">
+            <i class="fas fa-home me-2"></i>Go Home
+          </a>
+          <a href="/contact" class="btn btn-outline-light btn-lg px-5">
+            <i class="fas fa-envelope me-2"></i>Contact Us
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <%- include('partials/footer') %>
   </body>
-  <%- include('partials/footer') %>
 </html>

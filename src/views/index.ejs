@@ -9,16 +9,21 @@
   <body>
     <%- include('partials/navigation') %>
 
-    <header
-      class="container vh-100 d-flex justify-content-center align-items-center"
-    >
+    <header class="container vh-100 d-flex justify-content-center align-items-center" style="opacity: 0; transition: opacity 0.5s ease;">
       <div class="d-flex flex-column justify-content-center align-items-center">
-        <img
-          src="/img/fazt.png"
-          class="w-25 m-auto animated fadeIn"
-          alt="Website Logo"
-        />
-        <h1 class="display-1 my-5 text-uppercase fw-bold">Fazt</h1>
+        <div class="position-relative d-flex justify-content-center" style="width: 320px; height: 320px;">
+          <div class="spinner-border text-primary position-absolute top-50 start-50 translate-middle" id="loader"></div>
+          <img
+            src="https://picsum.photos/320/320"
+            class="animated fadeIn shadow-lg rounded-circle p-2"
+            alt="Random Image"
+            style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.3s ease; filter: brightness(1.1) contrast(1.1);"
+            onload="document.querySelector('header').style.opacity = 1; this.parentElement.querySelector('#loader').style.display = 'none';"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          />
+        </div>
+        <h1 class="display-1 my-5 text-uppercase fw-bold">My first API</h1>
         <a href="/about" class="btn btn-primary w-25">About Us</a>
       </div>
     </header>

@@ -1,5 +1,5 @@
 {
-  "name": "node-proyect",
+  "name": "proyect",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "First API project with NodeJs and Express.",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
@@ -18,5 +18,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrAnthonyGit/First-API-Nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrAnthonyGit/First-API-Nodejs/issues"
+  },
+  "homepage": "https://github.com/MrAnthonyGit/First-API-Nodejs#readme"
 }
